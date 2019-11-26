@@ -2,32 +2,95 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>index.html</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>index.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <style type="text/css">
-    html, body, #container {
-      height: 100%;
-    }
-    body, #container {
-      margin: 0;
-    }
-    #iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
-  <div id="container">
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lmd003/1.embed" height="525" width="100%"></iframe>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lmd003/3.embed" height="525" width="100%"></iframe> 
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lmd003/5.embed" height="625" width="100%"></iframe>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lmd003/7.embed" height="525" width="100%"></iframe>
-    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~lmd003/9.embed" height="525" width="100%"></iframe>
- </div>
+    <style type="text/css">
+        html,
+        body,
+        #container {
+            height: 100%;
+        }
+
+        #sharedGrid {
+            max-width: 50%;
+        }
+
+        #legendGrid {
+            min-width: 50%;
+        }
+
+        body,
+        #container {
+            margin: 0;
+        }
+
+        #iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .simpleTable {
+            width: 90%;
+            margin-left: 5%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .greaterArea tr td {
+            width: 50%;
+        }
+
+        #pieGrid {
+            width: 100%;
+            height: 100%;
+            min-height: 100px;
+        }
+    </style>
+    <table class="simpleTable">
+        <tr>
+            <td width="5%"></td>
+            <td width="15%">
+                <h1>Johnny Depp</h1>
+            </td>
+            <td>
+                <a href=https://github.com/luismdiaz01/DSC106-HW4>Code available here</a> </td> </tr> </table> <table
+                    class="simpleTable greaterArea">
+        <tr>
+            <td id="sharedGrid"> <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+                    src="https://plot.ly/~lmd003/11.embed" height="525" width="100%"></iframe></td>
+            <td id="legendGrid"> <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+                    src="https://plot.ly/~lmd003/3.embed" height="525" width="100%"></iframe></td>
+        </tr>
+        <tr>
+            <td colspan='2' id="pieGrid"><b>Analysis:</b> For the top two charts I decided to make a radar chart and a
+                polar bar chart
+            </td>
+        </tr>
+        <tr>
+            <td> <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+                    src="https://plot.ly/~lmd003/7.embed" height="525" width="100%"></iframe></td>
+            <td> <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+                    src="https://plot.ly/~lmd003/9.embed" height="525" width="100%"></iframe></td>
+        </tr>
+        <tr>
+            <td colspan='2' id="pieGrid"><b>Analysis:</b> For the top two charts I decided to 
+            </td>
+        </tr>
+        <tr>
+            <td colspan='2'> <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
+                    src="https://plot.ly/~lmd003/5.embed" height="625" width="100%"></iframe></td>
+        </tr>
+        <tr>
+            <td colspan='2' id="pieGrid"><b>Analysis:</b> For this chart I wanted to plot some of Johnny Depp's biggest movies, The Pirates of the Caribbean
+            </td>
+        </tr>
+    </table>
+
 </body>
 
 </html>
