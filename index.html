@@ -48,18 +48,22 @@
         #pieGrid {
             width: 100%;
             height: 100%;
-            min-height: 100px;
+            min-height: 200px;
         }
     </style>
     <table class="simpleTable">
         <tr>
             <td width="5%"></td>
             <td width="15%">
-                <h1>Johnny Depp</h1>
+                <h1>The Career of Johnny Depp</h1>
             </td>
             <td>
-                <a href=https://github.com/luismdiaz01/DSC106-HW4>Code available here</a> </td> </tr> </table> <table
-                    class="simpleTable greaterArea">
+                <a href=https://github.com/luismdiaz01/DSC106-HW4>Code available here</a> 
+            </td> 
+        </tr> 
+    </table> 
+    
+    <table class="simpleTable greaterArea">
         <tr>
             <td id="sharedGrid"> <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless"
                     src="https://plot.ly/~lmd003/11.embed" height="525" width="100%"></iframe></td>
@@ -68,7 +72,13 @@
         </tr>
         <tr>
             <td colspan='2' id="pieGrid"><b>Analysis:</b> For the top two charts I decided to make a radar chart and a
-                polar bar chart
+                polar bar chart. For the radar chart on the left I looked at what the top 7 genres of movies Depp acts
+                in and saw that drama takes the lead. I then wanted to see what are the average ratings of the movies
+                in those categories and made the polar bar chart on the right. By observing this chart we can see that 
+                even though he mainly acts in dramas, those tend to be his lowest rated movies while his documentaries 
+                are the highest rated. Each point/slice can be hovered over to give a detailed view of the counts of each movie 
+                in the genres.
+
             </td>
         </tr>
         <tr>
@@ -78,7 +88,18 @@
                     src="https://plot.ly/~lmd003/9.embed" height="525" width="100%"></iframe></td>
         </tr>
         <tr>
-            <td colspan='2' id="pieGrid"><b>Analysis:</b> For the top two charts I decided to 
+            <td colspan='2' id="pieGrid"><b>Analysis:</b> For the top two charts I decided to make a bubble chart and
+                heatmap focusing on Depp's Filmogrophy. On the left I made a bubble chart depicting a timeline of
+                different projects and showed how they rated by their filmogrophy type. The size of the bubble is 
+                determined by the number of ratings the filmogrophy got. Each bubble can be hovered over to give info
+                on the title of the film, the exact rating, the number of ratings, and its year created. We can see that 
+                movies dominate the majority of his filmogrophy and it (and other categories) can be toggled on/off by clicking
+                on the corresponding bubble on legend. On the right I created a heat map of Depp's filmogrophy over the years adn
+                the numbers of ratings they received. As the map shows, the filmogrophy that Depp participated in has an
+                average rating between 6.5 of 7.4. We can also see that Depp has been most active mainly since 2000 with a 
+                high period between 2005 - 2009. Grids can be hovered over for more information and the right tab shows a bar
+                chart of the number of films for a specific rating. (Note: A few TV series were omitted from both charts
+                because they started before Depp's career)
             </td>
         </tr>
         <tr>
@@ -86,10 +107,16 @@
                     src="https://plot.ly/~lmd003/5.embed" height="625" width="100%"></iframe></td>
         </tr>
         <tr>
-            <td colspan='2' id="pieGrid"><b>Analysis:</b> For this chart I wanted to plot some of Johnny Depp's biggest movies, The Pirates of the Caribbean
+            <td colspan='2' id="pieGrid"><b>Analysis:</b> For this chart I wanted to plot some of Johnny Depp's biggest
+                movies, The Pirates of the Caribbean, and see how much they grossed in various countries. Using data from 
+                boxofficemojo.com, I managed to clean it and plot it on a world map. Here we can see some interesting things.
+                After the second movie the series made less money in North America but more in other parts of the world like
+                China and Russia. It is also interesting to note that all the movies were played in China except for the 
+                second one. This is because the second movie was censored in China and never displayed there and made any money. 
             </td>
         </tr>
     </table>
+    <img src="https://media.giphy.com/media/Bl1t1DdP6iASI/giphy.gif" alt="Jar of Dirt">
 
 </body>
 
